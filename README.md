@@ -144,7 +144,7 @@ To optimize the deployment, consider the following:
 
 ## Diagram
 
+![deployfour4 drawio](https://github.com/NMonKLabs77/deployment4/assets/139259756/36eb9363-e5d0-468f-93a4-4ed3cd6f2508)
 
-![Deployfour drawio](https://github.com/NMonKLabs77/deployment4/assets/139259756/4ff26193-1ba8-49db-a6ed-ccc319819da0)
 
 
