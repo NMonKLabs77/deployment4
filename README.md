@@ -15,7 +15,7 @@ Done by: Nehemiah Monrose
 
 ## Purpose
 
-The purpose of this documentation is to guide you through the process I took to deploy my application to the NGINX Web server and monitor the performance of my application using Data Dog. Datadog is a tool that allows me to monitor the performance of my application using various metrics.
+The purpose of this documentation is to guide you through the process I took to deploy my application to the NGINX Web server and monitor the performance of my application using Cloud Watch. Cloud Watch is an AWS service that allows me to monitor the performance of my application using various metrics.
 
 
 ## Steps
@@ -118,16 +118,32 @@ The purpose of this documentation is to guide you through the process I took to 
  <img width="762" alt="Screenshot 2023-10-03 at 3 54 16 PM" src="https://github.com/NMonKLabs77/deployment4/assets/139259756/6b5daffd-3bcc-4cc4-92ee-52fc24b09755">
 
 
-11. **Create and connect a Monitor using Datadog**
-    - Click Monitors
-    - Click + New Monitor
-    - Click Metric
-    - Choose the detection method: Threshold Alert
-    - Define the Metric: Select systemm.cpu.user
-    - Set Alert Conditions: 15% for Alert Threshold, 10% for warning threshold
-    - Notify Team...Include an Alert Message and assign your email address
-   
-    ]
+11. **Monitoring**
+    - Navigate to Cloud Watch
+    - In the left panel click All Alarms
+    - Click Create Alarm
+    - Select Metric
+    - Select t2.medium: Cpu_usage_user
+    - Set name, alert message, topic threshold etc
+    - Stress test </br>
+
+
+
+    <img width="1181" alt="Screenshot 2023-10-03 at 10 47 26 PM" src="https://github.com/NMonKLabs77/deployment4/assets/139259756/5f4afeec-3d21-4975-b014-77259e0c71d8">
+
+    Here is a snapshot of the email sent:
+    
+
+<img width="1085" alt="Screenshot 2023-10-03 at 10 45 16 PM" src="https://github.com/NMonKLabs77/deployment4/assets/139259756/ca6edbfc-b06a-4a55-9b19-5ca6b2bb8d70">
+
+
+
+12. **Results of Deployment**
+    <p>URL Shortener was successfully deployed to Nginx Server!!</p>
+
+    <img width="1440" alt="Screenshot 2023-10-03 at 10 59 17 PM" src="https://github.com/NMonKLabs77/deployment4/assets/139259756/76c8bd06-7ab4-466a-9ee7-cb9d5c3b5fba">
+
+
 
 ## Optimization
 
@@ -144,7 +160,8 @@ To optimize the deployment, consider the following:
 
 ## Diagram
 
-![deployfour4 drawio](https://github.com/NMonKLabs77/deployment4/assets/139259756/36eb9363-e5d0-468f-93a4-4ed3cd6f2508)
 
 
+
+![reprove4 drawio](https://github.com/NMonKLabs77/deployment4/assets/139259756/c8fc39d8-d100-4e58-9a98-0521527dc85f)
 
